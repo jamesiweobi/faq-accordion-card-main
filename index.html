@@ -1,94 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="/style.css">
-  <title>Frontend Mentor | FAQ Accordion Card</title>
-
-
-</head>
-<body>
-<div class="container">
-  
-  <div class="faq-image">
-    <!-- <div class="box-image-container"> -->
-      <img src="/images/illustration-box-desktop.svg" class="box-img" alt="@-box">
-
-    <!-- </div> -->
-  </div>
-  <div class="faq-container">
-    <h1 class="faq">FAQ</h1>
-    <article>
-
-      <!-- Paragraph start -->
-      <div class="faq-tem">
-        <p class="paragraph-heading">
-          How many team members can I invite?
-        </p>
-        <p class="paragraph-body">
-          You can invite up to 2 additional users on the Free plan. There is no limit on 
-          team members for the Premium plan.
-        </p>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="faq-image">
+        <img
+          src="/images/illustration-box-desktop.svg"
+          class="box-img"
+          alt="@-box"
+        />
       </div>
-      <!-- Paragraph End -->
-    
-      <!-- Paragraph start -->
-      <div class="faq-tem">    
-        <p class="paragraph-heading">
-          What is the maximum file upload size?
-        </p>  
-        <p class="paragraph-body">
-          No more than 2GB. All files in your account must fit your allotted storage space.
-        </p>
-      </div>
-    <!-- Paragraph End -->
+      <div class="faq-container">
+        <h1 class="faq">FAQ</h1>
 
-          <!-- Paragraph start -->
-      <div class="faq-tem">    
-        <p class="paragraph-heading">
-      How do I reset my password?
-        </p>  
-        <p class="paragraph-body">
-        Click “Forgot password” from the login page or “Change password” from your profile page.
-        A reset link will be emailed to you.
-        </p>
-      </div>
-    <!-- Paragraph End -->
+        <!-- Paragraph start -->
+        <div class="faq-item">
+          <span class="paragraph-heading">
+            <p class="paragraph-header">How many team members can I invite?</p>
+            <img
+              class="arrow"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow down"
+            />
+          </span>
+          <p class="paragraph-body">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+        </div>
+        <hr />
+        <!-- Paragraph End -->
 
+        <!-- Paragraph start -->
+        <div class="faq-item">
+          <span class="paragraph-heading">
+            <p class="paragraph-header">
+              What is the maximum file upload size?
+            </p>
+            <img
+              class="arrow"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow down"
+            />
+          </span>
+          <p class="paragraph-body">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+        </div>
+        <hr />
+        <!-- Paragraph End -->
 
-          <!-- Paragraph start -->
-      <div class="faq-tem">    
-        <p class="paragraph-heading">
-       Can I cancel my subscription?
-        </p>  
-        <p class="paragraph-body">
-    Yes! Send us a message and we’ll process your request no questions asked.
-        </p>
-      </div>
-    <!-- Paragraph End -->
+        <!-- Paragraph start -->
+        <div class="faq-item">
+          <span class="paragraph-heading"
+            ><p class="paragraph-header">How do I reset my password?</p>
+            <img
+              class="arrow"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow down"
+            />
+          </span>
+          <p class="paragraph-body">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+        </div>
+        <hr />
+        <!-- Paragraph End -->
 
-    <!-- Paragraph start -->
-      <div class="faq-tem">    
-        <p class="paragraph-heading">
-    Do you provide additional support?
-        </p>  
-        <p class="paragraph-body">
-   Chat and email support is available 24/7. Phone lines are open during normal business hours.
-        </p>
+        <!-- Paragraph start -->
+        <div class="faq-item">
+          <span class="paragraph-heading"
+            ><p class="paragraph-header">Can I cancel my subscription?</p>
+            <img
+              class="arrow"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow down"
+            />
+          </span>
+          <p class="paragraph-body">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </p>
+        </div>
+        <hr />
+        <!-- Paragraph End -->
+
+        <!-- Paragraph start -->
+        <div class="faq-item">
+          <span class="paragraph-heading"
+            ><p class="paragraph-header">Do you provide additional support?</p>
+            <img
+              class="arrow"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow down"
+            />
+          </span>
+          <p class="paragraph-body">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+        </div>
+        <hr />
+        <!-- Paragraph End -->
       </div>
-    <!-- Paragraph End -->
-    
     </div>
-    </article>
 
-</div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/jamesiweobi">James Iweobi</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/jamesiweobi">James Iweobi</a>.
+    </div>
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/6109df2f64.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
