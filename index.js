@@ -1,188 +1,28 @@
-const data = [{
-  "id": 1,
-  "Song": "Volkswagen",
-  "Color": "Goldenrod",
-  "description": "Puce",
-  "likes": 34
-}, {
-  "id": 2,
-  "Song": "Mercedes-Benz",
-  "Color": "Orange",
-  "description": "Blue",
-  "likes": 5
-}, {
-  "id": 3,
-  "Song": "BMW",
-  "Color": "Purple",
-  "description": "Indigo",
-  "likes": 76
-}, {
-  "id": 4,
-  "Song": "Dodge",
-  "Color": "Green",
-  "description": "Goldenrod",
-  "likes": 72
-}, {
-  "id": 5,
-  "Song": "Chevrolet",
-  "Color": "Blue",
-  "description": "Red",
-  "likes": 50
-}, {
-  "id": 6,
-  "Song": "GMC",
-  "Color": "Puce",
-  "description": "Aquamarine",
-  "likes": 60
-}, {
-  "id": 7,
-  "Song": "Maserati",
-  "Color": "Yellow",
-  "description": "Indigo",
-  "likes": 54
-}, {
-  "id": 8,
-  "Song": "Mitsubishi",
-  "Color": "Red",
-  "description": "Violet",
-  "likes": 6
-}, {
-  "id": 9,
-  "Song": "Subaru",
-  "Color": "Aquamarine",
-  "description": "Blue",
-  "likes": 75
-}, {
-  "id": 10,
-  "Song": "Pontiac",
-  "Color": "Goldenrod",
-  "description": "Violet",
-  "likes": 83
-}, {
-  "id": 11,
-  "Song": "Audi",
-  "Color": "Fuscia",
-  "description": "Khaki",
-  "likes": 80
-}, {
-  "id": 12,
-  "Song": "Chevrolet",
-  "Color": "Yellow",
-  "description": "Purple",
-  "likes": 29
-}, {
-  "id": 13,
-  "Song": "Mercedes-Benz",
-  "Color": "Fuscia",
-  "description": "Fuscia",
-  "likes": 59
-}, {
-  "id": 14,
-  "Song": "Ford",
-  "Color": "Crimson",
-  "description": "Goldenrod",
-  "likes": 79
-}, {
-  "id": 15,
-  "Song": "Nissan",
-  "Color": "Khaki",
-  "description": "Turquoise",
-  "likes": 44
-}, {
-  "id": 16,
-  "Song": "Kia",
-  "Color": "Purple",
-  "description": "Green",
-  "likes": 43
-}, {
-  "id": 17,
-  "Song": "Chevrolet",
-  "Color": "Aquamarine",
-  "description": "Violet",
-  "likes": 50
-}, {
-  "id": 18,
-  "Song": "Chevrolet",
-  "Color": "Maroon",
-  "description": "Fuscia",
-  "likes": 47
-}, {
-  "id": 19,
-  "Song": "Pontiac",
-  "Color": "Pink",
-  "description": "Orange",
-  "likes": 17
-}, {
-  "id": 20,
-  "Song": "Suzuki",
-  "Color": "Puce",
-  "description": "Blue",
-  "likes": 94
-}, {
-  "id": 21,
-  "Song": "Volvo",
-  "Color": "Aquamarine",
-  "description": "Indigo",
-  "likes": 45
-}, {
-  "id": 22,
-  "Song": "Chevrolet",
-  "Color": "Maroon",
-  "description": "Green",
-  "likes": 77
-}, {
-  "id": 23,
-  "Song": "Saturn",
-  "Color": "Goldenrod",
-  "description": "Goldenrod",
-  "likes": 21
-}, {
-  "id": 24,
-  "Song": "Pontiac",
-  "Color": "Khaki",
-  "description": "Turquoise",
-  "likes": 22
-}, {
-  "id": 25,
-  "Song": "Chevrolet",
-  "Color": "Mauv",
-  "description": "Crimson",
-  "likes": 47
-}, {
-  "id": 26,
-  "Song": "Mitsubishi",
-  "Color": "Maroon",
-  "description": "Turquoise",
-  "likes": 23
-}, {
-  "id": 27,
-  "Song": "Toyota",
-  "Color": "Puce",
-  "description": "Crimson",
-  "likes": 2
-}, {
-  "id": 28,
-  "Song": "Mazda",
-  "Color": "Teal",
-  "description": "Violet",
-  "likes": 49
-}, {
-  "id": 29,
-  "Song": "Mercedes-Benz",
-  "Color": "Aquamarine",
-  "description": "Orange",
-  "likes": 99
-}, {
-  "id": 30,
-  "Song": "Mercedes-Benz",
-  "Color": "Puce",
-  "description": "Orange",
-  "likes": 62
-}]
-let searchWord = 'Yellow'
-let filterered = data.filter(car => car.Color === searchWord).map(car=> <div className="car-card"><img className='image-classname' src={car.description /* Image the obj has an img url*//}></img>
-<h2 className="title">
-  {car.Song}
-</h2>
-<p className="likes">{car.likes}</p>
-</div>)
+const questionNodeList = document.querySelectorAll('.faq-item');
+const paragraphNodeList = document.querySelectorAll('.paragraph-body');
+const questions = [...questionNodeList];
+const paragraphes = [...paragraphNodeList];
+
+questions.forEach((item) =>
+  item.addEventListener('click', (e) => {
+    const pBody = e.currentTarget.querySelector('.paragraph-body');
+    const faqItem = e.currentTarget;
+    const arrowBtn = e.currentTarget.querySelector('.arrow');
+    const title = e.currentTarget.querySelector('.paragraph-header');
+    faqItem.classList.toggle('faq-auto');
+    pBody.classList.toggle('show');
+    arrowBtn.classList.toggle('up');
+    title.classList.toggle('weight');
+    questions
+      .filter((element) => element !== faqItem)
+      .forEach((nodeElement) => {
+        const pBody = nodeElement.querySelector('.paragraph-body');
+        const arrowBtn = nodeElement.querySelector('.arrow');
+        const title = nodeElement.querySelector('.paragraph-header');
+        nodeElement.classList.remove('faq-auto');
+        pBody.classList.remove('show');
+        arrowBtn.classList.remove('up');
+        title.classList.remove('weight');
+      });
+  })
+);
