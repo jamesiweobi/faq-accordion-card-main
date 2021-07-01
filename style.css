@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  height: 100vh;
+}
+.container {
+  align-self: center;
+  max-width: 65%;
+  height: 70%;
+  margin: auto;
+  background: white;
+  -webkit-box-shadow: 0px 24px 16px -8px rgba(50, 50, 50, 0.3);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+/* Image styling */
+.faq-image {
+  height: 100%;
+  width: 50%;
+  background-image: url(./images/bg-pattern-desktop.svg),
+    url(./images/illustration-woman-online-desktop.svg);
+  background-position: -21.875rem -13.75rem, -3.125rem center;
+  background-repeat: no-repeat;
+  background-size: 40.625rem 48.125rem, 21.875rem 20rem;
+}
+/* .box-img-container {
+  width: 500px;
+  height: 400px;
+} */
+.box-img {
+  width: 100px;
+  height: 100px;
+}
+.faq-container {
+  width: 50%;
+  margin: auto 0;
+}
