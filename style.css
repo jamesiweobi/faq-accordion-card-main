@@ -132,7 +132,7 @@ hr {
     height: 100vh;
   } */
   .container {
-    max-width: 60%;
+    max-width: 80%;
     flex-direction: column;
     height: auto;
     padding-bottom: 30px;
@@ -155,7 +155,7 @@ hr {
       url(./images/illustration-woman-online-mobile.svg);
     background-repeat: no-repeat;
     background-size: 220px 110px, 250px 250px;
-    background-position: bottom, 10px;
+    background-position: bottom, top;
     position: relative;
     bottom: 150px;
     height: 250px;
