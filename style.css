@@ -8,9 +8,10 @@ body {
   flex-direction: column;
   align-content: center;
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-  height: 100vh;
   font-family: 'Kumbh Sans', sans-serif;
+  height: 100vh;
 }
+
 .container {
   align-self: center;
   max-width: 780px;
@@ -22,7 +23,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 /* Image styling */
+
 .faq-image {
   height: 100%;
   width: 50%;
@@ -35,6 +38,7 @@ body {
 }
 
 /* Image container --start-- */
+
 .box-img {
   width: 180px;
   height: 170px;
@@ -47,6 +51,7 @@ body {
 /* Image container --end-- */
 
 /* FAQ container -----Start -----*/
+
 .faq-container {
   width: 50%;
   height: 100%;
@@ -99,6 +104,7 @@ hr {
 }
 
 /* JavaScript Classes */
+
 .height-auto {
   height: auto;
 }
@@ -118,47 +124,53 @@ hr {
   font-weight: 700;
 }
 
+.attribution {
+  text-align: center;
+}
 @media (max-width: 802px) {
   .container {
     max-width: 85%;
   }
 }
-
 @media (max-width: 740px) {
+  body {
+    height: auto;
+  }
   .box-img {
     visibility: hidden;
   }
-  /* body {
-    height: 100vh;
-  } */
+
   .container {
     max-width: 80%;
     flex-direction: column;
     height: auto;
-    padding-bottom: 30px;
+    margin: 0 auto;
     margin-top: 150px;
+    margin-bottom: 20px;
   }
   .faq-container {
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    position: relative;
+    bottom: 100px;
+    height: 300px;
   }
   .faq {
     margin-top: 0px;
   }
   .faq-image {
-    border: 1px solid red;
     width: 100%;
     margin: 0 auto;
     background-image: url(./images/bg-pattern-mobile.svg),
       url(./images/illustration-woman-online-mobile.svg);
     background-repeat: no-repeat;
-    background-size: 220px 110px, 250px 250px;
-    background-position: bottom, top;
+    background-size: 250px 120px, 250px 250px;
+    background-position: bottom center, center center;
     position: relative;
     bottom: 150px;
-    height: 250px;
+    height: 300px;
   }
   .faq-item {
     width: 100%;
@@ -169,7 +181,7 @@ hr {
     width: 100%;
   }
   .faq-container {
-    width: 80%;
+    width: 90%;
     margin: 0px auto;
     height: auto;
   }
