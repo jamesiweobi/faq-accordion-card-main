@@ -126,6 +126,7 @@ hr {
 
 .attribution {
   text-align: center;
+  margin-bottom: 0px;
 }
 @media (max-width: 802px) {
   .container {
@@ -134,7 +135,7 @@ hr {
 }
 @media (max-width: 740px) {
   body {
-    height: auto;
+    height: unset;
   }
   .box-img {
     visibility: hidden;
