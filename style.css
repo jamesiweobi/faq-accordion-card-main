@@ -54,8 +54,7 @@ body {
 
 .faq-container {
   width: 50%;
-  height: 100%;
-  margin: auto 0;
+  margin-bottom: 0px;
 }
 .paragraph-heading {
   display: flex;
@@ -143,19 +142,18 @@ hr {
   .container {
     max-width: 80%;
     flex-direction: column;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 150px;
-    margin-bottom: 20px;
+    justify-content: space-around;
+    height: 75%;
+    margin: 170px auto 20px auto;
   }
   .faq-container {
     width: 80%;
-    margin: 0 auto;
+    margin: 0px auto 0px auto;
     display: flex;
     flex-direction: column;
     position: relative;
-    bottom: 100px;
-    height: 300px;
+    bottom: 150px;
+    justify-content: space-evenly;
   }
   .faq {
     margin-top: 0px;
@@ -166,15 +164,15 @@ hr {
     background-image: url(./images/bg-pattern-mobile.svg),
       url(./images/illustration-woman-online-mobile.svg);
     background-repeat: no-repeat;
-    background-size: 250px 120px, 250px 250px;
-    background-position: bottom center, center center;
+    background-size: 280px 150px, 320px 280px;
+    background-position: center bottom, 25px center;
     position: relative;
-    bottom: 150px;
-    height: 300px;
+    bottom: 200px;
+    height: 350px;
   }
   .faq-item {
     width: 100%;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
   }
 
   hr {
@@ -182,7 +180,5 @@ hr {
   }
   .faq-container {
     width: 90%;
-    margin: 0px auto;
-    height: auto;
   }
 }
