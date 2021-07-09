@@ -134,7 +134,7 @@ hr {
 }
 @media (max-width: 740px) {
   body {
-    height: auto;
+    height: 100%;
   }
   .box-img {
     visibility: hidden;
